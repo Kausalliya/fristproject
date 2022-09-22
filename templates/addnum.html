@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>      
+        div{
+           
+            margin: auto;
+  width: 20%;
+  height:350px;
+  border: 3px solid #00000078;
+  margin-top: 150px;
+  border-radius: 10%;
+  text-align: center;
+  padding:20px 50px;
+ /* From https://css.glass */
+background: rgba(0, 63, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
+border: 1px solid rgba(0, 63, 255, 0.34);
+ 
+        }
+        input[type="number"]{
+            font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  position: relative;
+  width: 80%;
+  display: block;
+  margin: 9px auto;
+  font-size: 17px;
+  color: rgb(3, 7, 76);
+  padding: 8px;
+  border-radius: 10px;
+  border:1px solid white;
+  background: rgba(3,3,3,.1);
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+        }
+      
+        h1{
+            color: rgb(0, 1, 77);
+        }
+        label{
+            color:rgb(18, 2, 90);
+            font-size: 20px;
+        }
+
+/* CSS */
+input[type="submit"] {
+  background: linear-gradient(to bottom right, #0fdbea, #2214b5);
+  border: 0;
+  width: 30%;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+input[type="submit"]:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(0, 64, 255, 0.5), .125rem .125rem 1rem rgba(115, 90, 255, 0.5);
+}
+
+input[type="submit"]:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(0, 114, 159, 0.5), .125rem .125rem 1rem rgba(0, 10, 123, 0.5);
+}
+    </style>
+   
+  </head>
+  <body>
+    <div >
+ <h1>Adding Two Number</h1>
+ <form action="{% url 'add_num' %}">
+ <label>Enter first number:</label> 
+ <input type="number" name="num1">
+ <label>Enter second number:</label> 
+ <input type="number" name="num2">
+ <input type="submit" value="add">
+</form>
+    </div>
+
+  </body>
+</html>
+    </body>
+</html>

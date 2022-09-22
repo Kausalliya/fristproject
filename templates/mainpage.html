@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kerala tourism</title>
+    <style>
+       div{
+          
+           text-align: center;
+    
+        }
+        ol{
+            display:inline-block;
+            font-size:25px;
+
+        }
+        ol li a{ text-align: center;
+            text-decoration: none;
+            color: rgb(226, 43, 134);
+            font-size: 25px;
+        }
+        ol li a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;font-size: 50px;color: rgb(232, 17, 17);">Kerala Tourism</h1>
+    <h2 style="text-align:center;font-size: 40px;color: rgb(232, 17, 17);">Welcome to God's Own Country</h2>
+    <hr>
+    <h3 style="text-align:center;font-size: 30px;color: rgb(0, 135, 20);">Best Tourist Places In Kerala</h3>
+    <div>
+    <ol >
+        <li>
+            <a href="{% url 'open_thekkady' %}">THEKKADY</a>
+        </li>
+        <li>
+            <a href="{% url 'open_wayanad' %}">WAYANAD</a>
+        </li>
+        <li>
+            <a href="{% url 'open_alleppey' %}">ALLEPPEY</a>
+        </li>
+        <li>
+            <a href="{% url 'open_vagamon' %}">VAGAMON</a>
+        </li>
+
+    </ol>
+    </div>
+</body>
+</html>
